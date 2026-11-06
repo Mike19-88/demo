@@ -5,28 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Flask App</title>
 
-    <style>
-        body {
-            margin: 0;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #f0f0f0;
-            font-family: Arial, sans-serif;
-        }
-
-        .main-text {
-            font-size: 5rem;
-            font-weight: bold;
-            text-align: center;
-            color: #333;
-        }
-    </style>
+    
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    
 </head>
 <body>
-    <div class="main-text">
+    <div class="container">
+        <div class="main-text">
         {{ text }}
+        </div>
+
+        <img
+        src="{{ url_for('static', filename='images/dogs_bollocks.jpg') }}"
+        alt="DogBollocks"
+        class="main-image">
     </div>
 </body>
 </html>

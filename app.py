@@ -2,7 +2,7 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-CUSTOM_TEXT = "Seriously Francy, this isn't that hard, you dick"
+CUSTOM_TEXT = "Complete Commercial Repairs Ltd. are the dogs bollocks"
 
 @app.route("/")
 def home():
